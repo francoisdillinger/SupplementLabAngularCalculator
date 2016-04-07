@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+    <html ng-app="Main">
+        <head>
+            
+            <link rel="stylesheet" type="text/css" href="styles.css">
+            
+        </head>
+        
+        <body>
+           <div id="main" ng-controller="MainCtrl">
+                <div id="message" >
+                    <h1>{{message}}</h1>
+                </div>
+               <div id="calculator">
+               <div id="input">
+               <input placeholder="0" type="number" ng-model="valueOne" required>
+               <input placeholder="0" type="number" ng-model="valueTwo" required>
+               </div>
+               <button ng-click="addition()">+</button>
+               <button ng-click="subtraction()">-</button>
+               <button ng-click="multiplication()">*</button>
+               <button ng-click="division()">/</button>
+               </div>
+           </div>
+           
+           <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.js"></script>
+            <script src="main.js"></script>
+           
+        </body>
+    </html>
