@@ -29,7 +29,10 @@ button {
 button:hover {
     color: white;
     background-color: grey;
+    transform: scale(1.5);
+    transition: all 0.5s ease-in-out;
 }
 #foot {
     text-align: center;
 }
+
